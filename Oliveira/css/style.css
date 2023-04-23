@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@200;300&display=swap");
+header {
+  position: relative;
+}
+header .headerImg {
+  background: url(../images/signature.png) no-repeat top left;
+  min-height: 400px;
+  border: 0px solid;
+  max-width: 100%;
+  width: 100%;
+  background-size: auto 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .headerImg {
+    background: none;
+  }
+}
+header .header-content-section {
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-content: space-between;
+  grid-gap: 1rem;
+}
+header .header-content-section .logoSection {
+  width: 100%;
+  border: 0px solid green;
+  padding: 25px 0 100px;
+}
+header .header-content-section .contextSection {
+  width: 100%;
+  border: 0px solid blue;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .contextSection {
+    text-align: center;
+  }
+}
+header .header-content-section .contextSection h2 {
+  width: 625px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .contextSection h2 {
+    width: 100%;
+  }
+}
+header .header-content-section .contextSection .buttonWrap {
+  margin-top: 60px;
+}
+header .header-content-section .featuresSection {
+  width: 100%;
+  padding: 120px 0 100px;
+}
+header .header-content-section .featuresSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .featuresSection ul {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+header .header-content-section .featuresSection ul li {
+  position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .featuresSection ul li {
+    text-align: center;
+  }
+}
+header .header-content-section .featuresSection ul li .featureBlock {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureImg {
+  margin: 20px 0;
+  width: 100%;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureImg img {
+  max-width: 100%;
+  display: block;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .featuresSection ul li .featureBlock .featureImg img {
+    margin: 0 auto;
+  }
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureText h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000000;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureText p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-size: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #111940;
+}
+
+h2 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 106.5%;
+  color: #111940;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+p {
+  font-weight: 200;
+  font-size: 24px;
+  color: #111940;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+.textBlock {
+  position: relative;
+}
+
+.comm-tb-p {
+  padding: 100px 0;
+}
+
+.whereItGrown {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  z-index: 99;
+}
+.whereItGrown::after {
+  content: "";
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(17, 25, 64, 0.7) 100%);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .whereItGrown::after {
+    background: transparent;
+    display: none;
+  }
+}
+.whereItGrown .contextText {
+  position: absolute;
+  padding: 1rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 101;
+  width: 100%;
+  color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .whereItGrown .contextText {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    color: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.whereItGrown .textBlock h2, .whereItGrown .textBlock p {
+  color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .whereItGrown .textBlock h2, .whereItGrown .textBlock p {
+    color: inherit;
+  }
+}
+
+.AboutUs {
+  text-align: center;
+}
+
+.productBenefits {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  z-index: 99;
+}
+.productBenefits .contextText {
+  position: absolute;
+  padding: 1rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 101;
+  width: 100%;
+  color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .contextText {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    color: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.productBenefits .textBlock h2, .productBenefits .textBlock p {
+  color: #fff;
+  text-align: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .textBlock h2, .productBenefits .textBlock p {
+    color: inherit;
+  }
+}
+.productBenefits .benefitsBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock {
+    grid-template-columns: 1fr;
+  }
+}
+.productBenefits .benefitsBlock .benefitItems {
+  margin-top: 60px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems {
+    margin-top: 0;
+  }
+}
+.productBenefits .benefitsBlock .benefitItems img {
+  display: block;
+  margin: 25px auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems img {
+    filter: invert(1);
+  }
+}
+.productBenefits .benefitsBlock .benefitItems h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems h4 {
+    color: inherit;
+  }
+}
+.productBenefits .benefitsBlock .benefitItems p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems p {
+    color: inherit;
+    font-size: 20px;
+  }
+}
+
+.Gallery {
+  text-align: center;
+}
+.Gallery .textBlock > p {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .Gallery .textBlock > p {
+    width: 100%;
+  }
+}
+.Gallery #galleryCarousel {
+  margin-top: 50px;
+}
+
+.contactUs {
+  text-align: center;
+}
+.contactUs .textBlock > p {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactUs .textBlock > p {
+    width: 100%;
+  }
+}
+.contactUs .formContact {
+  width: 50%;
+  display: block;
+  margin: 40px auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactUs .formContact {
+    width: 100%;
+  }
+}
+.contactUs .formContact input, .contactUs .formContact textarea {
+  border: 1.46882px solid #111940;
+  border-radius: 9px;
+  color: #111940;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #111940;
+}
+.contactUs .formContact input {
+  height: 84.93px;
+}
+.contactUs .formContact ::placeholder {
+  text-transform: uppercase;
+}
+.contactUs .formContact button.btn-primary {
+  background-color: #111940;
+  border: none;
+  width: 234.99px;
+  height: 74.6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D9D9D9;
+  margin-top: 40px;
+}
+
+.buttonWrap {
+  position: relative;
+}
+.buttonWrap button, .buttonWrap a {
+  width: 234.99px;
+  height: 74.6px;
+  background: #111940;
+  border-radius: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D9D9D9;
+}
+
+/*# sourceMappingURL=style.css.map */

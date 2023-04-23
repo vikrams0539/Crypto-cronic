@@ -1,0 +1,16 @@
+.buttonWrap{
+    position: relative;
+    button, a{
+        width: 234.99px;
+        height: 74.6px;
+        background: $primaryColor;
+        border-radius: 11px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        text-transform: capitalize;        
+        color: #D9D9D9;
+        
+    }
+}

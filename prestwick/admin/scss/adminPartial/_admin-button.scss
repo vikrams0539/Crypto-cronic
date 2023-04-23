@@ -1,0 +1,27 @@
+.buttonWrap{
+    .buttonStyle{
+        background-color: $btnColor;
+        width: 200px;
+        height: 60px;
+        border-radius: 9px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 30px;
+        text-transform: capitalize;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:hover, &:focus{
+            background-color: #1D6192;
+        }
+        img{
+            margin-right: 5px;
+        }
+    }
+    .active{        
+        background-color: #1D6192 !important;
+    }
+}

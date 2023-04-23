@@ -1,0 +1,23 @@
+// font-family: 'Inter', sans-serif;
+*{ margin: 0; padding: 0; border: none; box-sizing: border-box;}
+*:first-letter{
+    text-transform: uppercase;
+}
+body{
+    background-color: $colorBlack;
+    font-size: 100%;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: $colorBlack;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+}
+.pl-50{
+    padding-left: 50px; 
+}

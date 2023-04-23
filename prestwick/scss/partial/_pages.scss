@@ -1,0 +1,269 @@
+.prestwickFlight{
+    position: relative;
+    @include min_max_width(0px, 767px){
+        overflow: hidden;
+        overflow-y: auto;  
+    }   
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000000 11.55%, rgba(0, 0, 0, 0) 97.24%);
+       
+    }
+}
+.homeContent{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 100%;
+}
+.membershipHeader{
+    background: url(../images/membership-slider.jpg) #2D4454 no-repeat center;
+    
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     background: linear-gradient(355.96deg, #000000 6.14%, rgba(0, 0, 0, 0) 101.08%);
+    //     transform: rotate(0deg);
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    // }
+}
+.membershipWrap, .planeWrap{
+    background: url(../images/membership-form-bg.png) #2D4454 no-repeat center;
+    position: relative;
+    padding: 140px 0;
+    margin: 120px 0;
+    background-size: 100%;
+    z-index: 99;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: soft-light;
+        z-index: -99;
+    }
+}
+.membershipHeader, .homeHeader{
+    position: relative;
+    background-size: 100%;
+    z-index: 99;
+    background-repeat: no-repeat;
+    &::before{
+        content: '';
+        position: absolute;
+        background: linear-gradient(355.96deg, #000000 6.14%, rgba(0, 0, 0, 0) 75%);
+        // transform: rotate(180deg);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.errorMessage{
+    position: absolute;
+    color: #ff9191;
+    padding-bottom: 10px;
+    width: 100%;
+    bottom: 22px;
+}
+.forms{
+    width: 100%; 
+    label{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: $formColor;
+        margin-bottom: 23px;
+    }
+    input, textarea, date{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: $formColor;
+        background: #000000;
+        border-radius: 14px;
+        border: 0px;
+        margin-bottom: 60px;
+        &:focus{
+            background: #000;
+            color: $formColor;
+        } 
+        &::placeholder{
+            text-transform: uppercase;
+        }       
+    }
+    input{        
+        height: 126.86px;
+    }
+    input[type=file]{
+        height: auto;
+    }
+    .submitBtn{
+        text-transform: capitalize;width: 371.26px;
+        height: 105.21px;        
+        background: $submitBtn;
+        border-radius: 9px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        text-transform: capitalize;        
+        color: #FFFFFF;
+        &:hover{
+            background-color: $hoverColor;
+        }
+    }
+}
+.loadingScreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.8;
+        z-index: -99;
+    }
+    #spinner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        z-index: 99;
+        width: 80px;
+        height: 80px;
+    }
+}
+.response{
+    width: 100%;
+    padding: 1rem;
+    p{
+        text-align: center;
+        color: #08db08;
+    }
+}
+
+// servicesWrap
+.servicesWrap{
+    background-color: $secondaryColor;
+    padding: 25px 0;
+    .servicesBlock{
+        width: 100%;
+        padding: 0px 35px;
+        .servicesImg{
+            margin-bottom: 40px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .servicesText{
+            h4{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 100%;                 
+                text-align: center; 
+                color: #fff;
+            }
+            p{
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #BFBFBF;
+            }
+        }
+    }
+}
+
+// flightWrap
+.flightWrap{
+    padding: 0.5rem;
+    z-index: 9;
+    position: relative;
+    .flightImg{
+        position: relative;
+        z-index: 99;
+        .flightText{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+            padding: 0 15px;
+            @include min_max_width(0px, 767px){
+                width: 100% !important;
+            }
+            h4{
+                font-weight: 400;
+                font-size: 35px;
+                color: #fff;
+                margin-bottom: 16px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 114.17%;
+            }
+        }
+    }
+}
+.slick-dots li button{
+    border:3px solid #fff !important;
+    border-radius: 50%;
+}
+//  testimonialWrap
+.testimonialWrap{
+    background-color: $secondaryColor;
+    padding: 85px 0;
+    margin: 80px 0 20px;
+    p{
+        position: relative;
+        padding: 1rem;
+        span{
+            position: absolute;
+            img{
+
+            }
+            &:nth-of-type(1){                
+                left: -5px;
+                top:0;
+            }
+            &:nth-of-type(2){                
+                right: 0px;
+                bottom: 0;
+            }
+        }
+    }
+}
+.slick-dots{
+    .slick-active{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+}

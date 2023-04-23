@@ -1,0 +1,30 @@
+.menu_section
+{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    z-index: 99;
+    
+    nav
+    {
+        a.navbar-brand
+        {
+            margin-right: 0;
+        }
+        #navbarToggler
+        {
+            ul
+            {
+                li.nav-item
+                {
+                    text-transform: uppercase;
+                    a.nav-link
+                    {
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@200;300&display=swap');
+
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Inter', sans-serif;
+
+*{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
+*::first-letter{
+    text-transform: uppercase;
+}
+body{
+    font-size: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; 
+    color: $primaryColor;
+}
+h2{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 106.5%;     
+    color: $primaryColor;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 25px; 
+    @include min_max(0px, 767px){ 
+        font-size: 40px;
+    }
+}
+p{ 
+    font-weight: 200;
+    font-size: 24px;    
+    color: $primaryColor; 
+    @include min_max(0px, 767px){ 
+        font-size: 20px;
+    } 
+}
+.textBlock{
+    position: relative;
+}
+.comm-tb-p{
+    padding: 100px 0;
+}

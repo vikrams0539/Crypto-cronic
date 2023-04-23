@@ -1,0 +1,5 @@
+@mixin min_max_width($min_width, $max_width) {
+    @media only screen and (min-width: $min_width) and (max-width: $max_width) {        
+        @content;
+    }
+}

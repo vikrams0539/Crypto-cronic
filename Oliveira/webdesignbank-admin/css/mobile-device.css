@@ -1,0 +1,31 @@
+@media only screen and (min-width:1300px) and (max-width:1400px)
+{
+	.container 
+	{
+    	max-width: 1180px;
+	}
+	.right-absolute
+	{
+		position: absolute;
+	}
+	.admin-container-width>.container>.row>.col-3
+	{
+		max-width: 20%;
+	}
+	.admin-container-width>.container>.row>.col-9
+	{
+		max-width: 100%; 
+	}
+	.common-form-formation>form
+	{
+		width:72%;
+	}
+	span.gallery-active
+	{
+		width:30%;
+	}
+	.common-form-formation>form
+	{
+		width:100%;
+	}
+}
