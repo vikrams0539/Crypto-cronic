@@ -7168,6 +7168,11 @@ figcaption {
 }
 .signUp-form-outlet .w-form-done, .signUp-form-outlet .w-form-fail {
   padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-family: "Inter";
 }
 .signUp-form-outlet .w-form-done {
   background: #a6df63;

@@ -76,16 +76,22 @@ $(function(){
         else{            
             $(".w-form-fail").html("").fadeOut();
             $.ajax({
-            url: "http://localhost/JMCKDS-new/miscellaneous/swiss-company/api/email.php",
-            type: "POST",
-            data: formData,
-            success: function(data){
-                $(".w-form-done").fadeIn().html(data);
-                // setTimeout(() =>{
-                //     $(".w-form-done").fadeOut().html("");
-                // }, 3000);
-            }
-        })
+                url: "http://sccforyou.com/api_/signUpForm.php",
+                type: "POST",
+                data: formData,
+                dataType: 'json',
+                success: function(data){
+                    // let jsonString =  JSON.parse(data);
+                    console.warn("Success", data)
+                    if(data.status == false){
+                        $(".w-form-fail").fadeIn().html(data.message);
+                    }
+                    else{
+                        $(".w-form-done").fadeIn().html(data.message);
+                        $("#email-form").trigger("reset");
+                    }         
+                }
+            })
         }
     }   
 })
